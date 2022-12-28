@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/oaa3.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Full Burj View</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">Full Burj View</h1>
+</div>
+<div>
+    <p class = "text1">Апартаменты в отеле 2 Bedroom with Full Burj View расположены в Дубае. К услугам гостей ресторан, фитнес-центр, бар и общий лаундж. В распоряжении гостей банкомат и бесплатный Wi-Fi на всей территории. Стойка регистрации открыта круглосуточно, организована доставка еды и напитков в номер, работает пункт обмена валют.
+        В апартаментах есть кондиционер, гостиный уголок, телевизор с плоским экраном и спутниковыми каналами, кухня, обеденная зона, сейф и собственная ванная комната с гидромассажной ванной и феном.
+        Для гостей апартаментов «2 Bedroom with Full Burj View» сервируют завтрак «шведский стол» или завтрак по меню на выбор.</p>
+    <p class = "text2">Небоскреб Бурдж-Халифа находится в 1,2 км от отеля, а торговый центр Dubai Mall — менее чем в 1 км. Расстояние от апартаментов в отеле 2 Bedroom with Full Burj View до международного аэропорта Дубай составляет 14 км. За дополнительную плату для гостей организуют трансфер от/до аэропорта.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/oaa31.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/oaa32.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/oaa33.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/oaa34.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 10000$</p>
+</div>
+</body>
+</html>

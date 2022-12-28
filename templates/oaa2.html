@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/oaa1.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Golden Sands-Dubai Creek</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">Golden Sands-Dubai Creek</h1>
+</div>
+<div>
+    <p class = "text1">Пятизвездочный отель Golden Sands-Dubai Creek с бассейном на крыше и баром с панорамным видом на канал Хор-Дубай, город и Аравийское море расположен в оживленном районе Дубай-Крик. Поездка до международного аэропорта Дубай и многочисленных городских достопримечательностей, в том числе до золотого и текстильного рынка, занимает 10 минут.
+        Номера отеля Golden Sands-Dubai Creek's с мраморной ванной комнатой оформлены в современном стиле. Во всех номерах установлены кровати Serenity с роскошным постельным бельем. Современные номера оснащены телевизором с плоским экраном. Из окон открывается вид на канал или городской пейзаж.
+    </p>
+    <p class = "text2">До международного аэропорта Дубай, который находится в 5 км, удобно добираться на метро или такси. По запросу для гостей организуют трансфер от/до аэропорта. В отеле предусмотрены бесплатные услуги парковщика.
+
+        Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на 8,7.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/oaa24.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/oaa22.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/oaa23.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/oaa21.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 4000$</p>
+</div>
+</body>
+</html>

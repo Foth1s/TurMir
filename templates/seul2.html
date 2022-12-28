@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/seul2.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Regent Singapore</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">Regent Singapore</h1>
+</div>
+<div>
+    <p class = "text1">Отель Regent Singapore находится в нескольких шагах от торговой улицы Орчард-роуд. К услугам гостей превосходный ресторан и тренажерный зал. В распоряжении гостей также гидромассажные ванны, сауна и паровая баня. В отеле проводятся различные процедуры по уходу за телом. В отеле принимают к оплате карты Union Pay.Отель Regent Singapore находится в 1,3 км от Сингапурского ботанического сада и в 4,6 км от Национального музея Сингапура. Поездка от отеля до Сингапурского колеса обозрения Flyer замет 10 минут. До парка аттракционов Universal Studios Singapore можно доехать на такси за 15 минут.В оформлении номеров отеля Regent Singapore сочетаются азиатский и западный стили. В каждом из них есть ванная комната с туалетно-косметическими принадлежностями марки L'Occitane В числе прочих удобств — мини-бар и принадлежности для чая/кофе.</p>
+    <p class = "text2">Гости могут заказать сеанс массажа непосредственно в номер. Кроме того, в отеле работают интернет-центр и экскурсионное бюро, чьи сотрудники помогут организовать экскурсии к местным достопримечательностям. В отеле предоставляются услуги прачечной.Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на 8,9.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/seul21.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/seul22.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/seul23.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/seul24.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 7500$</p>
+</div>
+</body>
+</html>

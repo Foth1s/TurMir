@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/seul3.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>The Clan Hotel Singapore by Far East Hospitality</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">The Clan Hotel Singapore by Far East Hospitality</h1>
+</div>
+<div>
+    <p class = "text1">Отель The Clan Singapore by Far East Hospitality с фитнес-центром, баром и видом на город расположен в Сингапуре, в 700 метрах от Центра культурного наследия Чайнатауна. К услугам гостей ресторан, круглосуточная стойка регистрации и бесплатный Wi-Fi на всей территории. Осуществляется доставка еды и напитков в номер. Кроме того, в этом объекте размещения можно воспользоваться услугами консьержа и камерой хранения багажа.Номера отеля оснащены кондиционером. В числе удобств — шкаф для одежды, чайник, мини-бар, сейф, телевизор с плоским экраном и собственная ванная комната с биде. Номера отеля The Clan Singapore by Far East Hospitality укомплектованы постельным бельем и полотенцами.</p>
+    <p class = "text2">Поблизости от отеля находятся такие популярные достопримечательности, как городская галерея Сингапура, храм Шри Мариамман и Музей цивилизаций Азии. Расстояние от отеля The Clan Singapore by Far East Hospitality до аэропорта Селетар составляет 18 км.Это любимая часть города Сингапур среди наших гостей согласно независимым отзывам.
+    Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на 9,6.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/seul31.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/seul32.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/seul33.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/seul34.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 15500$</p>
+</div>
+</body>
+</html>

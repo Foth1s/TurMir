@@ -1,0 +1,35 @@
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('', views.HomePageView.as_view(), name='home'),
+    path('podbor/', views.PodborView.as_view(), name='podbor'),
+    path('kontakt/', views.KontaktView.as_view(), name='kontakt'),
+    path('otzivi/', views.OtziviView.as_view(), name='otzivi'),
+    path('oplata/', views.OplataView.as_view(), name='oplata'),
+    path('log/', views.LogView.as_view(), name='log'),
+    path('reg/', views.RegView.as_view(), name='reg'),
+    path('oaa/', views.OaaView.as_view(), name='oaa'),
+    path('oaa1/', views.Oaa1View.as_view(), name='oaa1'),
+    path('oaa2/', views.Oaa2View.as_view(), name='oaa2'),
+    path('oaa3/', views.Oaa3View.as_view(), name='oaa3'),
+    path('chernogoria/', views.ChernogView.as_view(), name='chernogoria'),
+    path('chernog1/', views.Chernog1View.as_view(), name='chernog1'),
+    path('oplati/', views.OplatiView.as_view(), name='oplati'),
+    path('chernog3/', views.Chernog3View.as_view(), name='chernog3'),
+    path('chernog2/', views.Chernog2View.as_view(), name='chernog2'),
+    path('seul/', views.SeulView.as_view(), name='seul'),
+    path('seul1/', views.Seul1View.as_view(), name='seul1'),
+    path('seul2/', views.Seul2View.as_view(), name='seul2'),
+    path('seul3/', views.Seul3View.as_view(), name='seul3'),
+    path('maldiv/', views.MaldivView.as_view(), name='maldiv'),
+    path('maldiv1/', views.Maldiv1View.as_view(), name='maldiv1'),
+    path('maldiv2/', views.Maldiv2View.as_view(), name='maldiv2'),
+    path('maldiv3/', views.Maldiv3View.as_view(), name='maldiv3'),
+    path('chex/', views.ChexView.as_view(), name='chex'),
+    path('chex1/', views.Chex1View.as_view(), name='chex1'),
+    path('chex2/', views.Chex2View.as_view(), name='chex2'),
+    path('chex3/', views.Chex3View.as_view(), name='chex3'),
+    path('konecoplat/', views.KonecoplatView.as_view(), name='konecoplat'),
+]

@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/maldiv1.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Apartamentos NONO by Charming Stay</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">Apartamentos NONO by Charming Stay</h1>
+</div>
+<div>
+    <p class = "text1">Комплекс Nono расположен в районе Сохо города Малага, в 400 метрах от улицы Лариос. К услугам гостей бесплатный Wi-Fi. До городского собора нужно пройти 500 метров. На территории комплекса обустроена частная парковка.Все современные апартаменты и номера-студио оформлены в индивидуальном стиле и оснащены кондиционером. В числе удобств гостиный уголок и кухня с тостером, микроволновой печью, холодильником и чайником. Полотенца включены в стоимость проживания.В комплексе Nono открыт фитнес-центр.Расстояние от комплекса Nono до музея Кармен Тиссен составляет 600 метров, до крепости Алькасаба — 700 метров, а до аэропорта Малаги — 8 км.Это любимая часть города Малага среди наших гостей согласно независимым отзывам.Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на 9,6.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/maldiv14.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/maldiv13.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/maldiv11.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/maldiv12.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 6000$</p>
+</div>
+</body>
+</html>

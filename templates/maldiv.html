@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/maldiv.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Подбор тура</title>
+</head>
+<body>
+    <nav class="header_nav">
+        <ul class="header_list">
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <input class = "poisk" type="text" id="input" placeholder="Введите страну..">
+        <ul id="list">
+            <li><a class = "countru" href="{% url 'oaa' %}">ОАЭ</a></li>
+            <li><a class = "countru" href="{% url 'chernogoria' %}">Черногория</a></li>
+            <li><a class = "countru" href="{% url 'maldiv' %}">Мальдивы</a></li>
+            <li><a class = "countru" href="{% url 'chex' %}">Чехия</a></li>
+            <li><a class = "countru" href="{% url 'seul' %}">Сингапур</a></li>
+        </ul>
+    </section>
+<script src={% static 'js/papa.js' %}></script>
+<h1 class = "text">Туры по Мальдивам</h1>
+<div class="container">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src={% static 'img/maldiv1.jpg' %} width = "300px" height = "205px">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p>Мальдивы — рай на Земле. Если вы ищите шикарный отдых на островах, с домом у моря за низкую цену, то этот тур для вас</p>
+                    <a href="{% url 'maldiv1' %}">Читать</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src={% static 'img/maldiv2.jpg' %} width = "300px" height = "205px">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p>Хотите погрузится в культуру страны и увидеть необычайную природу? Этот тур проведёт вас по самым известным местам Мальдив и откроет новый взгляд на них</p>
+                    <a href="{% url 'maldiv2' %}">Читать</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src={% static 'img/maldiv3.jpg' %} width = "300px" height = "205px">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p>Если вы мечтаете посетить самые популярные места, где отдыхают мировые звезды шоу-бизнеса и пожить в домах с выходом в кристальное море и этот тур оставит самые изумительные воспоминания</p>
+                    <a href="{% url 'maldiv3' %}">Читать</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</body>
+</html>

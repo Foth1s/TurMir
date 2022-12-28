@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/index.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Главное меню</title>
+</head>
+<body>  
+    <nav class="header_nav">
+        <ul class="header_list">
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'signup' %}">Регистрация</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'login' %}">Вход</a>
+            </li>
+        </ul>
+    </nav>
+<div>
+    <div>
+        <h1 class="text">TurMir.BY</h1>
+    </div>
+    <div class="text2">
+        <p>+375 (29) 870-83-14</p>
+        <p>Адрес. Минск, ул.Чюрлениса д.8</p>
+        <p>Время работы: Пн-Сб с 9:00 - 19:00</p>
+        <p>Перерыв с 12:00 до 13:00</p>
+        <p>danikmiromcik85@gmail.com</p>
+    </div>
+    <div class="text5">
+        <p>Курсы валют</p>
+        <p>USD 2,6724</p>
+        <p>EUR 2,6147</p>
+        <p>RUB 4,0654</p>
+    </div>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/5.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/9.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/7.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/6.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

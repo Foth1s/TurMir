@@ -1,0 +1,66 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/kontakt.css' %}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Контакты</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav> 
+</div>
+    <div class="container">
+        <div class="kont">
+            <div class="text2">
+                <p class="colort">Режим работы:</p>
+                <p>Пн-Пт: c 11:00 до 19:00</p>
+                <p>Суббота: по договоренности</p>
+                <p>Воскресенье: выходной</p>
+            </div>
+            <div class="text3">
+                <p class="colort">Социальные сети:</p>
+                <p>E-mail: TurMir@gmail.com</p>
+                <p>Inst: @mmironchikkkk</p>
+                <p>Telegram: mironchiikkkk</p>
+            </div>
+            <div class="text4">
+                <p class="colort">Адрес офиса:</p>
+                <p>ООО "Даник-Трэвел"</p>
+                <p>ст.м. Петровщина</p>
+                <p>ул. Чюрлёниса, д.8, кв.46</p>
+            </div>
+            <div class="text5">
+                <p class="colort">Телефоны:</p>
+                <p>A1: +375 (29) 870-83-14</p>
+                <p>MTC: +375 (44) 123-43-12</p>
+                <p>Городской: 301-50-47</p>
+            </div>
+            <div class="block1">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af3bf23666716d2c66ff56946b5f8d680c139614e7250cb30cdc3ca84ad9af0bb&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

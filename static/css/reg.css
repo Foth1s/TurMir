@@ -1,0 +1,135 @@
+body
+{
+    background-size: 100%;
+    background-image: url(/static/img/30.jpg);
+}
+.element::-webkit-scrollbar 
+{
+    width: 0;
+}
+::-webkit-scrollbar 
+{
+    width: 0;
+}
+.container{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    margin-top: -150px;
+    margin-left: -10px;
+}
+.login{
+    font-family: sans-serif;
+    width: 300px;
+    height: 490px;
+    background-color: #3b81bbb3;
+    color:  rgb(255, 255, 255);
+    position: absolute;
+    position: relative;
+    top: 50px;
+    left: 540px;
+    border-radius: 15px;
+    padding: 80px;
+}
+.user{
+    font-family: sans-serif;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 50%;
+    position: absolute;
+    position: relative;
+    top: -50px;
+    left: 100px;
+}
+h1{
+    margin-top: -10px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0 0 20px;
+    font-size: 30px;
+}
+.login input{
+    font-family: sans-serif;
+    position: absolute;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login input[type="text"], 
+input[type="password"]{
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    height: 30px;
+    font-size: 15px;
+}
+.login input[type="submit"]{
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid aqua;
+    color:#fff;
+    font-size: 20px;
+}
+.login input[type="submit"]:hover{
+    font-family: sans-serif;
+    cursor: pointer;
+    background-color: rgba(0, 255, 170, 0.425);
+    color: #fff;
+}
+.login input[type="submit"]:active{
+    color: aquamarine;
+    background-color: #ffffff;
+}
+button{
+    position: relative;
+}
+button.glav 
+{
+    margin-left: 55px;
+    font-family: sans-serif;
+    padding: 10px 30px;
+    font-size: 1.2vw;
+    background-color: rgba(28,28,28,0);
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    border-radius: 0.75em;
+    transition: 0.4s linear; 
+}
+button.glav:hover 
+{
+    font-family: sans-serif;
+    border: 3px solid #ffffff;
+    background: #679ed27f;
+    transition: 0.4s linear; 
+}
+button.glav:active{
+    color: #000;
+    background-color: #ffffff;
+}
+.helptext{
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+ul{
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+ }
+ .errorlist{
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+ }

@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/maldiv3.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Gran Hotel Miramar GL</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">Gran Hotel Miramar GL</h1>
+</div>
+<div>
+    <p class = "text1">Роскошный отель Gran Miramar GL расположен в историческом здании XX века в Малаге, в 10 метрах от пляжа Ла-Малагета. В отеле есть спа-центр и сезонный бассейн.Элегантные номера с видом на пляж, сад или город оснащены телевизором с плоским экраном и спутниковыми каналами, кондиционером и акустической системой с разъемами Bluetooth, USB и HDMI. В распоряжении гостей мультимедийная библиотека. В собственной ванной комнате установлена ванна и зеркало с термометром и часами. Предоставляются туалетно-косметические принадлежности Bulgari.В ресторане Príncipe de Asturias подают блюда интернациональной кухни со средиземноморским уклоном. В снэк-баре царит неформальная обстановка. На крыше обустроена терраса, где можно заказать напитки и полюбоваться живописным видом на море.</p>
+    <p class = "text2">В числе удобств детский бассейн, сезонный мини-клуб и различные конференц-залы.Крепость Альказаба находится в 700 метрах от отеля Gran Miramar GL, а до центра города — 10 минут ходьбы. Расстояние до аэропорта Малаги составляет 9 км.Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на 9,4.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/maldiv31.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/maldiv32.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/maldiv33.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/maldiv34.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 15500$</p>
+</div>
+</body>
+</html>

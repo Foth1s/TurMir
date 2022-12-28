@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/chernog3.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Conte Hotel & Restaurant</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">Conte Hotel & Restaurant</h1>
+</div>
+<div>
+    <p class = "text1">Отель с рестораном Conte расположен на берегу моря, прямо на главной площади старинного города Пераст. К услугам гостей элегантно оформленные люксы и апартаменты. В лобби работает бесплатный Wi-Fi. Ресторан славится своими фирменными блюдами из рыбы. Все номера оснащены кондиционерами и спутниковым телевидением. У стойки регистрации можно заказать услуги прачечной, а в экскурсионном бюро можно получить различную туристическую информацию.Отель расположен в здании бывшего дома культуры, которое входит в список памятников архитектуры, в нескольких шагах от церкви Святого Николая. Отель состоит из центрального корпуса и 4 дополнительных зданий. Церковь Святого Николая находится всего в нескольких шагах от отеля.</p>
+    <p class = "text2">Рядом с отелем Conte останавливается местный автобус. Отель расположен в 50 метрах от супермаркета. Прогулка до песчаного и вымощенного камнем пляжа с баром и спортивными сооружениями занимает 4 минуты. Городской музей Пераста находится всего в 100 метрах от отеля. Неподалеку, в историческом центре города, работают различные рестораны и бары. Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на 9,6.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/chernog31.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chernog32.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chernog33.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chernog34.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 2500$</p>
+</div>
+</body>
+</html>

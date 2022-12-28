@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/chex3.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>The Julius Prague</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">The Julius Prague</h1>
+</div>
+<div>
+    <p class = "text1">Отель The Julius Prague расположен в Праге, менее чем в 1 км от Исторического здания Национального музея Праги. К услугам гостей ресторан, частная парковка, фитнес-центр и бар. Стойка регистрации открыта круглосуточно. Предоставляются услуги консьержа. На всей территории работает бесплатный Wi-Fi. Желающие могут забронировать семейные номера.Все номера отеля оснащены кофемашиной. Во всех номерах отеля The Julius Prague имеется собственная ванная комната с душем и феном, телевизор с плоским экраном и кондиционер, а в некоторых номерах также обустроена гостиная зона. Предоставляются полотенца и постельное белье.По утрам в отеле The Julius Prague сервируют континентальный завтрак и завтрак «шведский стол».</p>
+    <p class = "text2">Поблизости от отеля находятся такие популярные достопримечательности, как здание муниципалитета, Пражские куранты и Староместская площадь. Расстояние от отеля The Julius Prague до международного аэропорта имени Вацлава Гавела составляет 17 км.Это любимая часть города Прага среди наших гостей согласно независимым отзывам.Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на 9,7.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/chex31.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chex32.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chex33.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chex34.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 5000$</p>
+</div>
+</body>
+</html>

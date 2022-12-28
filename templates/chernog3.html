@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/chernog1.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Hotel Sokoline</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">Hotel Sokoline</h1>
+</div>
+<div>
+    <p class = "text1">Отель Sokoline с бесплатным Wi-Fi и террасой для загара с панорамным видом на окрестности и горы расположен в городе Орашье. В ресторане отеля подают блюда национальной кухни. На территории обустроена бесплатная частная парковка. Все номера оснащены телевизором с плоским экраном, а в некоторых номерах имеется гостиный уголок. Из ряда номеров открывается вид на реку или сад. В распоряжении гостей собственная ванная комната. Предоставляются купальные халаты и бесплатные туалетно-косметические принадлежности.В отеле работает круглосуточная стойка регистрации и сувенирный магазин. Окрестности отлично подходят для пеших и велосипедных прогулок.</p>
+    <p class = "text2">Монастырь Острога находится в 4 км от отеля Sokoline, город Даниловград — в 16 км, а город Никшич — в 22 км. Расстояние до аэропорта Подгорица составляет 37 км.Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на 9,7.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/chernog42.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chernog41.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chernog43.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chernog44.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 5000$</p>
+</div>
+</body>
+</html>

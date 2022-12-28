@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/chex1.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Hotel Atos</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">Hotel Atos</h1>
+</div>
+<div>
+    <p class = "text1">Вы можете получить Genius-скидку в Hotel Atos! Чтобы сэкономить на этом жилье, просто войдите в аккаунт.Отель Atos расположен в центре живописного района Мала Страна, рядом с пышным зеленым садом Кински, всего в 10 минутах ходьбы от Пражского Града, Национального театра и Вацлавской площади.Отель занимает очаровательное отреставрированное историческое здание второй половине XIX века. К услугам гостей сети отелей Aureli Hotels просторные и тихие номера в современном стиле. Все номера оснащены телевизором со спутниковыми каналами.При отеле работает ресторан Meduzzy, в котором подают разнообразный завтрак «шведский стол», а также вкусные блюда чешской и интернациональной кухни. Гостям отеля предоставляется скидка в размере 10%.</p>
+    <p class = "text2">Рядом с отелем находится трамвайная остановка, от которой можно удобно добраться до всех достопримечательностей «Золотого города».Это любимая часть города Прага среди наших гостей согласно независимым отзывам.
+    Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на 9,3.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/chex14.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chex11.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chex12.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chex13.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 1000$</p>
+</div>
+</body>
+</html>

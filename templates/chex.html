@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/chex.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Подбор тура</title>
+</head>
+<body>
+    <nav class="header_nav">
+        <ul class="header_list">
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <input class = "poisk" type="text" id="input" placeholder="Введите страну..">
+        <ul id="list">
+            <li><a class = "countru" href="{% url 'oaa' %}">ОАЭ</a></li>
+            <li><a class = "countru" href="{% url 'chernogoria' %}">Черногория</a></li>
+            <li><a class = "countru" href="{% url 'maldiv' %}">Мальдивы</a></li>
+            <li><a class = "countru" href="{% url 'chex' %}">Чехия</a></li>
+            <li><a class = "countru" href="{% url 'seul' %}">Сингапур</a></li>
+        </ul>
+    </section>
+<script src={% static 'js/papa.js' %}></script>
+<h1 class = "text">Туры по Чехии</h1>
+<div class="container">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src={% static 'img/chex3.jpg' %} width = "300px" height = "205px">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p>Чехия славится своими античными деревнями, пивом и архитектурой старых городов. Побывайте, попробуйте и узрите Чехию во всей красе с этим эконом-класс туром</p>
+                    <a href="{% url 'chex1' %}">Читать</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src={% static 'img/chex2.jpg' %} width = "300px" height = "205px">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p>Если вам недостаточно пива или архитектура для вас скучна, то благодаря этому туру Чехия станет для вас эталоном красоты: поездки в заповедники, дикую природу и многое другое</p>
+                    <a href="{% url 'chex2' %}">Читать</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src={% static 'img/chex1.jpg' %} width = "300px" height = "205px">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p>Отдыхать в Чехии можно и по-богатому. Данный тур предоставляет пятизвёздочный отель прямо на главной площади Праги, с прекрасным видом на Соборы, экскурсия по историческим местам</p>
+                    <a href="{% url 'chex3' %}">Читать</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</body>
+</html>

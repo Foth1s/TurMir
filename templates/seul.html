@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/seul.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Подбор тура</title>
+</head>
+<body>
+    <nav class="header_nav">
+        <ul class="header_list">
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+            </li>
+            <li class="header_item">
+                <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <input class = "poisk" type="text" id="input" placeholder="Введите страну..">
+        <ul id="list">
+            <li><a class = "countru" href="{% url 'oaa' %}">ОАЭ</a></li>
+            <li><a class = "countru" href="{% url 'chernogoria' %}">Черногория</a></li>
+            <li><a class = "countru" href="{% url 'maldiv' %}">Мальдивы</a></li>
+            <li><a class = "countru" href="{% url 'chex' %}">Чехия</a></li>
+            <li><a class = "countru" href="{% url 'seul' %}">Сингапур</a></li>
+        </ul>
+    </section>
+<script src={% static 'js/papa.js' %}></script>
+<h1 class = "text">Туры по Сингапуру</h1>
+<div class="container">
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src={% static 'img/seul3.jpg' %} width = "300px" height = "205px">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p>Если говорить о экономном и незабываемом отдыхе в Сингапуре, то этот тур идеально подходит под описание. Дешешвые аппартаменты и семь экскурсий по местам страны.</p>
+                    <a href="{% url 'seul1' %}">Читать</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src={% static 'img/seul1.jpg' %} width = "300px" height = "205px">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p>Сингапур колоритный своей архитектурой. Ощутить себя жителем этой прекрасной страны поможет данный тур за счёт предостовления комфортных аппартоментов. </p>
+                    <a href="{% url 'seul2' %}">Читать</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face1">
+            <div class="content">
+                <img src={% static 'img/seul2.jpg' %} width = "300px" height = "205px">
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p>Этот тур расскроет Сингаупр со всех возможных сторон: Двухэтажный номер с неописуемым видом на город, экскурсии и развлечения, а также личный микро-автобус.</p>
+                    <a href="{% url 'seul3' %}">Читать</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/oaa1.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Four Points</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">Four Points by Sheraton Downtown Dubai</h1>
+</div>
+<div>
+    <p class = "text1">К услугам гостей 4-звездочного отеля Four Points by Sheraton Downtown Dubai бассейн на крыше и бесплатный Wi-Fi на всей территории. Отель находится на улице Манкхул, в 2 км от Всемирного торгового центра.
+
+        Во всех номерах Four Points by Sheraton Downtown Dubai имеется фирменная кровать Sheraton и интерактивный ЖК-телевизор с 55-дюймовым экраном. В числе стандартных удобств — мини-бар, принадлежности для приготовления горячих напитков и хорошо освещенный рабочий стол.
+        
+        В 3 ресторанах отеля Four Points by Sheraton Downtown Dubai в течение всего дня подают разнообразные блюда интернациональной кухни. В спорт-баре Yesterdays, где установлен телевизор с плоским экраном.</p>
+    <p class = "text2">Для гостей отеля Four Points by Sheraton Downtown Dubai организуется бесплатный трансфер до близлежащих торговых центров. Желающие могут позаниматься в современном тренажерном зале или отдохнуть в баре у бассейна на обустроенной на крыше террасе.
+        
+        Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на 8,0.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/oaa12.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/oaa11.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/oaa13.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/oaa14.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 2000$</p>
+</div>
+</body>
+</html>

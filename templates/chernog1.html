@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/chernog2.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Ethno village Moraca - Skadar lake</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">Ethno village Moraca - Skadar lake</h1>
+</div>
+<div>
+    <p class = "text1">Этно-деревня Moraca - Skadar lake находится в городе Вранина, в 43 км от курорта Свети-Стефан. К услугам гостей бар и бесплатный Wi-Fi.Все номера располагают балконом с видом на реку, телевизором с плоским экраном и спутниковыми каналами, гостиным уголком, хорошо оборудованной мини-кухней и собственной ванной комнатой с душем, феном и бесплатными туалетно-косметическими принадлежностями. За дополнительную плату предоставляются полотенца и постельное белье. К услугам гостей сад и терраса. Комплекс Ethno village Moraca - Skadar lake находится в 22 км от Подгорицы и в 20 км от города Петровац-на-Мору. Расстояние до ближайшего аэропорта Подгорица составляет 11 км. За дополнительную плату организуется трансфер от/до аэропорта.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/chernog22.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chernog21.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chernog23.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chernog24.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 1000$</p>
+</div>
+</body>
+</html>

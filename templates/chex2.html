@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{% static 'css/chex2.css'%}">
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Hotel Globus</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <h1 class="text">Hotel Globus</h1>
+</div>
+<div>
+    <p class = "text1">Отель Globus находится в Праге, в 600 метрах от станции метро Roztyly, на краю парка в районе Горни Розтылы. Расстояние до Вацлавской площади составляет 8 км.К услугам гостей круглосуточная стойка регистрации и пункт обмена валюты.В ресторане ежедневно сервируют завтрак «шведский стол», а в лобби-баре предлагают закуски и напитки. В ресторане Terassa можно заказать блюда чешской и интернациональной кухни, а также различные сорта традиционного пива. Рядом с лесом расположен летний сад.Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на 8,4.</p>
+</div>
+<div class="slider moddel">
+    <div class="slides">
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'img/chex21.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chex24.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chex22.jpg' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'img/chex23.jpg' %}" alt=""></div>
+    </div>
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+    </div>
+</div>
+</div>
+<div>
+    <li class="headeritem">
+        <a class="headerlink header_link_color linkk" href="{% url 'oplati' %}">Забронировать</a>
+    </li>
+    <p class = "text3">Цена: 1700$</p>
+</div>
+</body>
+</html>

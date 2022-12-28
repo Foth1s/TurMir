@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static 'css/oplata.css' %}>
+    <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
+    <title>Оплата</title>
+</head>
+<body>
+<nav class="header_nav">
+    <ul class="header_list">
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+        </li>
+        <li class="header_item">
+            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+        </li>
+    </ul>
+</nav> 
+<div class="container">
+    <div class="kont">
+        <div class="text2">
+            <p class="colort"></p>
+            <p>Мы предлагаем оплатить наши услуги любым удобным способом.</p>
+            <p>Так же мы можем предложить возможность получить рассрочку.</p>
+            <p>Возможность оплата картой "Халва" и "Карта покупок" онлайн.</p>
+        </div>
+        <div class="text3">
+            <p class="colort"></p>
+            <p>Так же можно оплатить онлайн с помощью любой картой.</p>
+            <p>Мы принимаем разные карты, по типу:</p>
+            <p>Visa, Visa Electron, MasterCard, Maestro, Белкарт.</p>
+        </div>
+        <div class="text4">
+        <p class="colort"></p>
+            <p>Можно оплатить тур с помощью наличных в кассе.</p>
+            <p>Оплата наличными производиться в офисе TurMir</p>
+            <p>Оплата в белорусских рублях по внутреннему курсу туроператора на дату оплаты.</p>
+        </div>
+            <div class="block1">
+                <img src={% static 'img/11.png'%} alt="" width="200" height="100">
+            </div>
+            <div class="block2">
+                <img src={% static 'img/12.png'%} alt="">
+            </div> 
+            <div class="block3">
+                <img src={% static 'img/14.png'%} alt="" width="200" height="100">
+            </div>   
+            <div class="block3">
+                <img src={% static 'img/15.png'%} alt="" width="200" height="100">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
