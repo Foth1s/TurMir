@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={% static 'css/oplata.css' %}>
+    <link rel="stylesheet" href={% static 'css/oplata1.css' %}>
     <link rel="website icon" href="{% static 'img/Logo.png' %}" type="png">
     <title>Оплата</title>
 </head>
@@ -13,22 +13,19 @@
 <nav class="header_nav">
     <ul class="header_list">
         <li class="header_item">
-            <a class="header_link header_link_color" href="{% url 'home' %}">Главная страница</a>
+            <a class="header_link header_link_color" href="{% url 'home1' %}">Главная страница</a>
         </li>
         <li class="header_item">
-            <a class="header_link header_link_color" href="{% url 'otzivi' %}">Отзывы</a>
+            <a class="header_link header_link_color" href="{% url 'podbor' %}">Поиск тура</a>
         </li>
         <li class="header_item">
-            <a class="header_link header_link_color" href="{% url 'oplata' %}">Оплата</a>
+            <a class="header_link header_link_color" href="{% url 'otzivi1' %}">Отзывы</a>
         </li>
         <li class="header_item">
-            <a class="header_link header_link_color" href="{% url 'kontakt' %}">Контакты</a>
+            <a class="header_link header_link_color" href="{% url 'oplata1' %}">Оплата</a>
         </li>
         <li class="header_item">
-            <a class="header_link header_link_color" href="{% url 'signup' %}">Регистрация</a>
-        </li>
-        <li class="header_item">
-            <a class="header_link header_link_color" href="{% url 'login' %}">Вход</a>
+            <a class="header_link header_link_color" href="{% url 'kontakt1' %}">Контакты</a>
         </li>
     </ul>
 </nav> 

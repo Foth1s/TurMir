@@ -119,3 +119,19 @@ class Chex3View(ListView):
 class KonecoplatView(ListView):
     model = Tour
     template_name = 'konecoplat.html'
+
+class HomeePageView(ListView):
+    model = Tour
+    template_name = 'index1.html'
+
+class KontakttView(ListView):
+    model = Tour
+    template_name = 'kontakt1.html'
+
+class OplataaView(ListView):
+    model = Tour
+    template_name = 'oplata1.html'
+
+class OtziviiView(ListView):
+    model = Tour
+    template_name = 'otzivi1.html'

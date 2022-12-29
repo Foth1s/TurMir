@@ -32,4 +32,8 @@ urlpatterns = [
     path('chex2/', views.Chex2View.as_view(), name='chex2'),
     path('chex3/', views.Chex3View.as_view(), name='chex3'),
     path('konecoplat/', views.KonecoplatView.as_view(), name='konecoplat'),
+    path('home1/', views.HomeePageView.as_view(), name='home1'),
+    path('kontakt1/', views.KontakttView.as_view(), name='kontakt1'),
+    path('oplata1/', views.OplataaView.as_view(), name='oplata1'),
+    path('otzivi1/', views.OtziviiView.as_view(), name='otzivi1'),
 ]
